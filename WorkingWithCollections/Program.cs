@@ -10,6 +10,8 @@ namespace WorkingWithCollections
     {
         static void Main(string[] args)
         {
+
+
         }
     }
 }
