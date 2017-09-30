@@ -23,7 +23,7 @@ namespace WorkingWithCollections
             b1.Author = "Robert Tabor";
             b1.Title = "Microsoft .NET XML Web Services";
             b1.ISBN = "0-000-000000-0";
-            /*
+
             ArrayList myArrayList = new ArrayList();
             myArrayList.Add(Car1);
             myArrayList.Add(Car2);
@@ -35,7 +35,7 @@ namespace WorkingWithCollections
                 Console.WriteLine(car.Make);
                 Console.ReadLine();
             }
-            */
+            /*
             //List<T>
             List<Car> myList = new List<Car>();
             myList.Add(Car1);
@@ -49,9 +49,25 @@ namespace WorkingWithCollections
             }
 
         }
+        
+            Dictionary<string, Car> myDictionary = new Dictionary<string, Car>();
 
+            myDictionary.Add(Car1.VIN, Car1);
+            myDictionary.Add(Car2.VIN, Car2);
+
+            Console.WriteLine(myDictionary["B2"]);
+            */
+
+            Car car1 = new Car() { Make = "BMW", Model = "750li", VIN = "C3" };
+            Car car2 = new Car() { Make = "Toyota", Model = "4Runner", VIN = "D3" };
+
+
+            Console.ReadLine();
+
+        }
         class Car
         {
+            public string VIN { get; set; }
             public string Make { get; set; }
             public string Model { get; set; }
         }
